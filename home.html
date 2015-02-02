@@ -38,14 +38,10 @@
 				padding: 15px 10px 5px 10px;
 				float:left;
 				font-size: 16px;">
-				<div class="btn-group">
-					  <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle"><span class="caret"></span></button>
-					  <ul class="dropdown-menu">
-						<li><a href="#">Java</a></li>
-						<li><a href="#">Javascript</a></li>
-						<li><a href="#">PHP</a></li>
-						<li><a href="#">AngularJS</a></li>
-					  </ul>
+				<div ng-controller="CategoryCtrl" class="btn-group">
+					<div>
+						Category:
+						<select id="category" ng-options="category in categories"></select>
 					</div>
 				</div>
 				</div>
@@ -94,6 +90,16 @@
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
     
+    <script>
+            function CategoriesCtrl($scope) {
+                $scope.categories = {
+                    'Java',
+                    'PHP',
+                    'AngularJS'
+                    'Javascript'
+                };
+            }
+        </script>
    
 </body>
 </html>
