@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuickHelp</title>
+    <title>Free Bootstrap Admin Template : Binary Admin</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -31,16 +31,21 @@
 			<div class="row">
 				<div class="col-md-12">
 				 <h2>HOME</h2>   
-					<h5>Welcome Admin , Love to see you back. </h5>
+					<h5>Welcome Jhon Deo , Love to see you back. </h5>
 						
 					<!--LEFT BUTTON ON TOP-->
 				<div style="color: white;
 				padding: 15px 10px 5px 10px;
 				float:left;
 				font-size: 16px;">
-				Category:
-				<div ng-controller="CategoryCtrl" class="btn-group">
-					<div ng-dropdown="" options="categories"></div>
+				<div class="btn-group">
+					  <select>
+						  <option value="java">Java</option>
+						  <option value="javascript">Javascript</option>
+						  <option value="angularjs">AngularJS</option>
+						  <option value="php">PHP</option>
+					</select>
+					</div>
 				</div>
 				</div>
 			</div>              
@@ -51,14 +56,16 @@
                 <div class="col-md-6 col-sm-6">
 					<a href="">
 						<div class="well">
-							<h4>I NEED HELP</h4>
+							<h4>Normal Well</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
 						</div>
 					</a>
                 </div>
                 <div class="col-md-6 col-sm-6">
 					<a href="">
 						<div class="well">
-							<h4>I CAN HELP</h4>
+							<h4>Small Well</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
 						</div>
 					</a>
                 </div>
@@ -88,16 +95,6 @@
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
     
-    <script>
-            function CategoriesCtrl($scope) {
-                $scope.categories = {
-                    'Java',
-                    'PHP',
-                    'AngularJS'
-                    'Javascript'
-                };
-            }
-        </script>
    
 </body>
 </html>
